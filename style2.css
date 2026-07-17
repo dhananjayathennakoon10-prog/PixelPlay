@@ -1,0 +1,23 @@
+table{
+
+width:80%;
+border-collapse:collapse;
+background:#222;
+
+}
+
+
+th,td{
+
+border:1px solid white;
+padding:15px;
+text-align:center;
+
+}
+
+
+th{
+
+background:#0088ff;
+
+}

@@ -1,0 +1,366 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0b1020;
+    overflow-x:hidden;
+    color:white;
+}
+
+/* Background */
+
+.bg1,
+.bg2,
+.bg3{
+    position:fixed;
+    border-radius:50%;
+    filter:blur(120px);
+    z-index:-1;
+}
+
+.bg1{
+    width:350px;
+    height:350px;
+    background:#00d4ff;
+    top:-80px;
+    left:-100px;
+}
+
+.bg2{
+    width:350px;
+    height:350px;
+    background:#ff00cc;
+    right:-100px;
+    top:250px;
+}
+
+.bg3{
+    width:300px;
+    height:300px;
+    background:#00ff88;
+    bottom:-80px;
+    left:45%;
+}
+
+/* Navbar */
+
+nav{
+    width:92%;
+    margin:25px auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 40px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    box-shadow:0 10px 40px rgba(0,0,0,.4);
+}
+
+.logo{
+
+    font-size:32px;
+
+    font-weight:700;
+
+    color:#fff;
+
+}
+
+nav ul{
+
+display:flex;
+
+gap:40px;
+
+list-style:none;
+
+}
+
+nav ul li a{
+
+text-decoration:none;
+
+color:white;
+
+font-weight:500;
+
+transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+color:#00d4ff;
+
+}
+
+.login{
+
+padding:12px 28px;
+
+border:none;
+
+border-radius:30px;
+
+background:#00d4ff;
+
+color:white;
+
+font-size:15px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.login:hover{
+
+transform:scale(1.05);
+
+background:#00b4d8;
+
+}
+
+/* Cards */
+
+.games{
+
+width:90%;
+
+margin:60px auto;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:35px;
+
+}
+
+.card{
+
+padding:20px;
+
+border-radius:25px;
+
+text-align:center;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,255,255,.15);
+
+transition:.4s;
+
+box-shadow:0 15px 30px rgba(0,0,0,.4);
+
+}
+
+.card:hover{
+
+transform:translateY(-12px);
+
+}
+
+.card img{
+
+width:100%;
+
+height:280px;
+
+object-fit:cover;
+
+border-radius:20px;
+
+}
+
+.card h2{
+
+margin:18px 0;
+
+font-size:24px;
+
+}
+
+.card button{
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 0 15px rgba(0,198,255,0.5);
+}
+
+.card button:hover{
+    transform: translateY(-3px);
+    background: linear-gradient(90deg, #00ff99, #00c853);
+    box-shadow: 0 0 25px rgba(0,255,153,0.8);
+}
+
+.card button:active{
+    transform: scale(0.96);
+}
+
+/* Header */
+header{
+    width:100%;
+    padding:20px 0;
+}
+
+/* Navigation Bar */
+.navbar{
+    width:90%;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 30px;
+
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(20px);
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.4);
+}
+
+/* Logo */
+.logo{
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+}
+
+/* Menu */
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+.nav-links li{
+    display:inline;
+}
+
+/* Home & Download Buttons */
+.nav-links a{
+
+    text-decoration:none;
+    color:white;
+
+    font-size:18px;
+    font-weight:600;
+
+    padding:12px 25px;
+
+    border-radius:30px;
+
+    transition:.3s;
+}
+
+/* Hover */
+.nav-links a:hover{
+
+    background:#00d4ff;
+    color:black;
+
+    box-shadow:0 0 20px #00d4ff;
+
+}
+
+/* Active Button */
+.nav-links a.active{
+
+    background:#00d4ff;
+
+    color:black;
+
+}
+
+/* Login Button */
+.login-btn{
+
+    padding:12px 28px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#ff0080;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.login-btn:hover{
+
+    background:#ff3399;
+
+    box-shadow:0 0 20px #ff0080;
+
+}
+
+/* logung###################################################*/
+
+button {
+
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: white;
+
+    padding: 12px 30px;
+
+    border: none;
+    border-radius: 30px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow: 0 0 15px #0072ff;
+
+}
+
+
+button:hover {
+
+    transform: scale(1.1);
+
+    background: linear-gradient(45deg, #0072ff, #00c6ff);
+
+    box-shadow: 0 0 25px #00c6ff;
+
+}
+
